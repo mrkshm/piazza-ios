@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		0F3BF2DF2D31509700108AA2 /* HotwireNative in Frameworks */ = {isa = PBXBuildFile; productRef = 0F3BF2DE2D31509700108AA2 /* HotwireNative */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		0FBBE5132D31503F005B87F4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -65,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F3BF2DF2D31509700108AA2 /* HotwireNative in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,6 +130,7 @@
 			);
 			name = Piazza;
 			packageProductDependencies = (
+				0F3BF2DE2D31509700108AA2 /* HotwireNative */,
 			);
 			productName = Piazza;
 			productReference = 0FBBE4FC2D31503E005B87F4 /* Piazza.app */;
@@ -208,6 +214,9 @@
 			);
 			mainGroup = 0FBBE4F32D31503E005B87F4;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				0F3BF2DD2D31509700108AA2 /* XCRemoteSwiftPackageReference "hotwire-native-ios" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 0FBBE4FD2D31503E005B87F4 /* Products */;
 			projectDirPath = "";
@@ -569,6 +578,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0F3BF2DD2D31509700108AA2 /* XCRemoteSwiftPackageReference "hotwire-native-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hotwired/hotwire-native-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0F3BF2DE2D31509700108AA2 /* HotwireNative */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0F3BF2DD2D31509700108AA2 /* XCRemoteSwiftPackageReference "hotwire-native-ios" */;
+			productName = HotwireNative;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0FBBE4F42D31503E005B87F4 /* Project object */;
 }
